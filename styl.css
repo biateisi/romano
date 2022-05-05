@@ -1,0 +1,120 @@
+#container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header{
+    background-color: #af2901;
+    color: rgb(251, 255, 7);
+    text-align: center;
+    padding:1px;
+    margin: 0 auto;
+    border-radius: 0 0 85px 85px;
+}
+
+h1{
+    font-size: 100px;
+    margin: 0;
+}
+
+p{
+    color: #af2901;
+    background-color: rgb(251, 255, 7);
+    margin: 0;
+}
+
+.display1e2{
+    margin: 25px auto;
+    padding: 2%;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    color: rgb(251, 255, 7);
+    background-color: #af2901;
+    font-size: larger;
+    border-radius: 85px ;
+}
+
+#mensagem {
+    padding: 15px;
+    margin: 20px;
+    font-size: large;
+    width: 280px;
+}
+
+#select{
+    padding: 20px;
+    font-size: large;
+    margin: 20px;
+    width: 290px;
+}
+
+.incremento{
+    margin: 20px;
+    display: none;
+}
+
+#numeroCesar{
+    margin: 0 auto;
+    padding: 15px;
+    width: 70px;
+    font-size: medium;
+    text-align: center;
+    display: none;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    text-align: left;
+    width: 180px;
+}
+
+#codificar, #decodificar{
+    margin: 15px;
+}
+
+#submit{
+    margin: 20px;
+    padding: 1%;
+    font-size: large;
+    height: 50px;
+    width: 280px;
+    border: 3px solid black;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+#submit:hover{
+    transform: scale(1.2);
+    background-color: rgb(192, 192, 192);
+}
+
+@media(max-width: 806px){
+    header{
+        padding: 100px;
+    }
+
+    .display1e2{
+        padding: 50px;
+    }
+}
+
+@media(max-width: 600px){
+    header{
+        width: 570px;
+    }
+
+    .display1e2{
+        width: 570px;
+        margin: 0;
+    }
+
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+}

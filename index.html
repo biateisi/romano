@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styl.css" rel="stylesheet">
+    <title>Passinho do Romano</title>
+</head>
+<body>
+    <header> <h1>Passinho do romano</h1>
+    <h3>Sistema de codificação</h3>
+    </header>
+    <main>
+        <div id=container>
+            <img src="romanos.png" width="770" height="570">
+        <div class="display1e2">
+            <label for="mensagem">Digite a mensagem a ser codificada:</label><br>
+            <input type="text" name="mensagem" id="mensagem" placeholder="mensagem"><br>
+
+            <label>Selecione o tipo de decodificação</label><br>
+            <select id="select">
+                <option value="">Sistema:</option>
+                <option value="Base64" >Base64</option>
+                <option value="cifraCesar">Cifra de César</option>
+            </select>
+                <label for="numeroCesar" class="incremento">Digite o valor do incremento a ser utilizado na Cifra de Cesar</label>
+                <input type="number" id="numeroCesar" ><br>
+            <label class="escolha">Escolha o próximo passo para a sua mensagem:</label><br><br>
+            <div class="radio">
+                <input type="radio" id="codificar" name="codDecod" value="codificar" checked>
+                <label for="codificar">Codificar</label><br>
+                <input type="radio" id="decodificar" name="codDecod" value="decodificar">
+                <label for="decodificar">Decodificar</label>
+            </div>
+
+            <div class="">
+                <h2 class="hMensagem"></h2><br>
+                <p class="pMensagem"></p>
+            </div>
+
+            <input type="submit" value="Codificar Mensagem!" id="submit">
+        </div>
+    </div>
+</main>
+    <script src="./code.js"></script>
+</body>
+</html>
