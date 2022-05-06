@@ -110,28 +110,13 @@ p{
     background-color: rgb(192, 192, 192);
 }
 
-@media(max-width: 806px){
-    header{
-        padding: 100px;
-    }
-
-    .display1e2{
-        padding: 50px;
-    }
-}
-
-@media(max-width: 600px){
-    header{
-        width: 570px;
-    }
-
-    .display1e2{
-        width: 570px;
-        margin: 0;
-    }
-
-    #container{
-        display: flex;
+@media screen and (max-width: 700px){
+    img, #container, header, main {
         flex-direction: column;
+        max-width: 100%;
+        height:auto;
     }
-}
+
+    h1 {
+        font-size: 27vw;
+    }
